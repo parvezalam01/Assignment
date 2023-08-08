@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+:root{
+  --primary: #007F61;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+.container{
+  margin-top: 40px;
+  background: #fff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.cart-wrapper {
+  width:100%;
+  padding: 16px;
+}
+
+.heading-container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.heading {
+  background: white;
+  color: var(--primary);
+  font-size: 18.076px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 13.56px;
+}
+.line{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.9px;
+  background: #c8c8c8;
+  z-index: 1;
+}
+
+.title-container{
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.title-container .title {
+  color: #000;
+  font-size: 14.461px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.title-container .amount {
+  color: #000;
+  font-size: 14.461px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount .discount-off {
+  font-size: 14.461px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.discount .discount-title {
+  color: var(--primary);
+  font-size: 12.653px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: right
+}
+
+.card-header .original-price {
+  text-decoration: line-through;
+  color: #9f9f9f;
+  font-size: 9.942px;
+  font-weight: 400;
+  margin-right: 10px;
+  align-self: flex-end;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.cart-summary .shipping {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.cart-summary .total {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cart-summary .total .total-heading{
+  font-weight: 400;
+}
+
+.add-cart-btn {
+  width: 100%;
+  border-radius: 4px 4px 4px 0px;
+  background: var(--primary);
+  height: 48px;
+  border: none;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.add-cart-btn:active{
+  background-color: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+}
+.copyright p{
+  color: #000;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.copyright span {
+  color: #000;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.card {
+  border-radius: 3.615px;
+  border: 0.904px solid #c8c8c8;
+  padding: 20px;
+  cursor:  pointer;
+}
+.card:not(:last-child){
+  margin-bottom: 18px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header .circle {
+  width: 14.461px;
+  height: 14.461px;
+  flex-shrink: 0;
+  border: 0.9px solid #dadada;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-options {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: 35px;
+  margin-top: 20px;
+  position: relative;
+  display: none;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-title {
+  color: #000;
+  font-family: "Inter";
+  font-size: 9.942px;
+  font-weight: 400;
+}
+
+.select-options {
+  border-radius: 1.808px;
+  border: 0.904px solid #d9d9d9;
+  background: #fff;
+  margin: 5px 0;
+  color: #000;
+  font-family: "Inter";
+  font-size: 10.846px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 36px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  outline: none;
+  appearance: none;
+}
+
+.select-options.size {
+  padding-left: 5px;
+  padding-right: 48px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.card-options .option-one,
+.option-two {
+  color: #000;
+  font-family: "Inter";
+  font-size: 9.038px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-options .option-one {
+  position: absolute;
+  top: 30%;
+  right: 105%;
+}
+
+.card-options .option-two {
+  position: absolute;
+  top: 73%;
+  right: 105%;
+}
+
+.card.active {
+  border-radius: 3.615px;
+  border: 0.904px solid var(--primary);
+  background: #f4fbf9;
+}
+
+.card.active .card-options {
+  display: flex;
+}
+
+.card.active .circle > div{
+  width: 9.038px;
+  height: 9.038px;
+  background-color: var(--primary);
+  flex-shrink: 0;
+  border: 0.9px solid var(--primary);
+  border-radius: 50%;
+}
+
+.card.active .circle {
+  border: 0.9px solid var(--primary);
+}
+
+.arrow{
+  font-size: 7px;
+  position: absolute;
+  z-index: 1;
+}
+.arrow.one {
+  top: 25px;
+  left: 50px;
+}
+.arrow.two {
+  top: 60px;
+  left: 50px;
+}
+.arrow.three {
+  top: 25px;
+  right: 8px;
+}
+.arrow.four {
+  top: 60px;
+  right: 8px;
+}
+
+@media only screen and (min-width: 360px) {
+  .cart-wrapper{
+    width: 340.73px;
+    padding: 0;
+  }
+  .container{
+    margin-top: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .add-cart-btn:hover{
+    background-color: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+  }
+}
